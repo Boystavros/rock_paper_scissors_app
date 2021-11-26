@@ -6,6 +6,19 @@
 
     <p>To play: enter 'rock', 'paper' or 'scissors' in the url bar once for each player, seperated by a forward slash (/)</p>
 
-    <p>The winner is {{ winner.name }}! {{ winner.choice }} beats </p>
+    <p>{{ first.name }} chose {{ first.choice }}</p>
+
+    <p>{{ second.name }} chose {{ second.choice }}</p>
+    
+    {% if winner != None %}
+
+        <p>The winner is {{ winner.name }}, {{ winner.choice }} beats {{ loser.choice }}!!!</p>
+          
+    {% else %}
+        
+        <p>It's a draw! Try again with new choices!</p>
+
+    {% endif %}
+    
 
 {% endblock content %}
