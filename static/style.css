@@ -1,0 +1,65 @@
+html {
+    background-color: rgb(230, 114, 6);
+}
+
+body {
+    display: block;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-left: 2px solid #999;
+    border-right: 2px solid #999;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-nav {
+    background-color: white;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(230, 114, 6);
+    text-decoration-style:dashed;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #999;
+    height: 2rem;
+    width: 80%;
+    padding-top: 1rem;
+}
+
+p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+img {
+    margin: 30px;
+    /* align-items: center; */
+    width: 90%;
+    
+    padding-left: 30px;
+}
+
+.winner {
+    color: tomato;
+    box-shadow: tomato;
+}
+
+
+
+
+

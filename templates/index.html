@@ -2,17 +2,15 @@
 
 {% block content %}
 
-    <h1>Welcome to my Rock, Paper, Scissors game!!!</h1>
+    <h1>And the winner is...</h1>
 
-    <p>To play: enter 'rock', 'paper' or 'scissors' in the url bar once for each player, seperated by a forward slash (/)</p>
+    <p>{{ first.name }} chose {{ first.choice }},</p>
 
-    <p>{{ first.name }} chose {{ first.choice }}</p>
-
-    <p>{{ second.name }} chose {{ second.choice }}</p>
+    <p>{{ second.name }} chose {{ second.choice }},</p>
     
     {% if winner != None %}
 
-        <p>The winner is {{ winner.name }}, {{ winner.choice }} beats {{ loser.choice }}!!!</p>
+        <p>The winner is <span class="winner">{{ winner.name }}</span>, {{ winner.choice }} beats {{ loser.choice }}!!!</p>
           
     {% else %}
         

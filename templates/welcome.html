@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    
+    <h1>Welcome to my Rock, Paper, Scissors game!!!</h1>
+
+    <p>To play: enter 'rock', 'paper' or 'scissors' in the url bar once for each player, seperated by a forward slash (/)</p>
+
+    <img src="{{ url_for('static', filename='images/url_bar.png') }}" alt="A URL bar">
+
+    <p>Then hit 'ENTER'</p>
+
+{% endblock content %}  
+
