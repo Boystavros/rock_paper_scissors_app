@@ -1,0 +1,17 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title>{{ title }}</title>
+    </head>
+    <body>
+        <ul>
+          <li clas="navLink"><a href="/">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}
+        
+        
+        
+        {% endblock content %}
+    </body>
+</html>
