@@ -1,22 +1,14 @@
 {% extends 'base.html' %}
 
-{% block content %}
-
-    <h1>And the winner is...</h1>
-
-    <p>{{ first.name }} chose {{ first.choice }},</p>
-
-    <p>{{ second.name }} chose {{ second.choice }},</p>
+{% block content %} 
     
-    {% if winner != None %}
+    <h1>Welcome to my Rock, Paper, Scissors game!!!</h1>
 
-        <p>The winner is <span class="winner">{{ winner.name }}</span>, {{ winner.choice }} beats {{ loser.choice }}!!!</p>
-          
-    {% else %}
-        
-        <p>It's a draw! Try again with new choices!</p>
+    <p>To play: enter 'rock', 'paper' or 'scissors' in the url bar once for each player, seperated by a forward slash (/)</p>
 
-    {% endif %}
-    
+    <img src="{{ url_for('static', filename='images/url_bar.png') }}" alt="A URL bar">
 
-{% endblock content %}
+    <p>Then hit 'ENTER'</p>
+
+{% endblock content %}  
+
