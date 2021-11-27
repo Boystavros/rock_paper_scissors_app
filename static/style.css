@@ -47,13 +47,13 @@ footer {
 p {
     font-size: 2rem;
     text-align: center;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 img {
-    margin: 30px;
+    /* margin: 30px; */
     width: 90%;    
     padding-left: 30px;
 }
@@ -71,5 +71,55 @@ img {
     margin-right: 100px;
     margin-left: 0;
 }
+
+#robot {
+    width: 100px;
+    height: auto;
+}
+
+#play-comp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#link-button {
+    padding: 21px;
+    font-size: 2rem;
+    grid-column: 2;
+}
+
+#form-field {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#enter-name {
+    grid-column: 2;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#name {
+    margin: 17px;
+    font-size: 1.5rem;
+}
+
+/* #choices {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    font-size: 2rem;
+
+}
+
+legend {
+    margin-left: 66px;
+}
+
+.radio-button {
+    padding: 20px;
+} */
+
 
 

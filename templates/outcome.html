@@ -7,7 +7,7 @@
     <p>{{ first.name }} chose {{ first.choice }},</p>
     <p>{{ second.name }} chose {{ second.choice }},</p>
   
-    {% if winner != None %}
+    {% if winner != -1 %}
 
         <p><span class="winner">{{ winner.name }}</span> is the winner! {{ winner.choice }} beats {{ loser.choice }}!!!</p>
           

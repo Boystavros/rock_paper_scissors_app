@@ -14,11 +14,7 @@ def outcome(choice_1, choice_2):
     player_2 = Player("player_2", choice_2)
     game = Game()
     result = game.play_game(player_1, player_2)
-    if result == player_1:
-            loser = player_2
-    else:
-            loser = player_1
-    return render_template('outcome.html', title="Outcome", first=player_1, second=player_2, winner=result, loser=loser)
+    return render_template('outcome.html', title="Outcome", first=player_1, second=player_2, winner=result[0], loser=result[1])
 
 
 @app.route('/play')
@@ -40,3 +36,5 @@ def play_computer():
         print(request.form)
         print(player.name, player.choice)
         print(computer_player.name, computer_player.choice)
+        result = game.play_game(player, computer_player)
+        return render_template('outcome.html', title="Outcome", first=player, second=computer_player, winner=result[0], loser=result[1] )
