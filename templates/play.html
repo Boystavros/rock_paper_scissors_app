@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Can you beat the computer?...</h2>
+
+    <form action="/play" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name">
+
+        <fieldset>
+            <legend>Make your choice below:</legend>
+
+            <input type="radio" name="rock" id="rock" >
+            <label for="rock">Rock</label><br/>
+
+            <input type="radio" name="paper" id="paper">
+            <label for="paper">Paper</label><br/>
+
+            <input type="radio" name="scissors" id="scissors">
+            <label for="scissors">Scissors</label>
+        </fieldset>
+
+        <input type="submit" value="Play">
+    </form>
+    
+{% endblock content %}
+

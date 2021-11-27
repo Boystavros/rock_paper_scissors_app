@@ -1,3 +1,5 @@
+from models.player import Player
+
 class Game:
 
     def __init__(self):
@@ -18,4 +20,7 @@ class Game:
         elif player_1.choice == "scissors" and player_2.choice == "paper":
             return player_1
         else:
-            return player_2           
+            return player_2
+
+    def generate_computer_player(self):
+        return Player("Computer", "rock")
