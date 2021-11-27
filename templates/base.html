@@ -8,10 +8,12 @@
       <title>{{ title }} - RPS Game</title>
     </head>
     <body>
+      <header>
         <ul class="main-nav">
           <li clas="navLink"><a href="/">Home</a></li>
         </ul>
-        <hr>
+        <img id="logo" src="{{ url_for('static', filename='images/logo.svg') }}" alt="RPS game logo">
+      </header>  
         {% block content %}
         
         
@@ -19,6 +21,8 @@
         {% endblock content %}
     </body>
     <footer>
-      &copy; sponniah_tech, 2021
+      &copy; sponniah_tech, 2021. 
+      Logo courtesy of:
+      <a href="https://www.vecteezy.com/free-vector/cartoon">Cartoon Vectors by Vecteezy</a>
     </footer>
 </html>
