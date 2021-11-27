@@ -25,12 +25,7 @@ def play_page():
 def play_computer():
         game = Game()
         player_name = request.form['name']
-        if 'rock' in request.form:
-                player_choice = "rock"
-        elif 'paper' in request.form:
-                player_choice = "paper"
-        else:
-                player_choice = "scissors"
+        player_choice = request.form['choice']
         player = Player(player_name, player_choice)
         computer_player = game.generate_computer_player()
         print(request.form)

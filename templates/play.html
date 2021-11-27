@@ -8,18 +8,12 @@
         <label for="name" id="enter-name">Enter your name:</label>
         <input type="text" name="name" id="name">
         
-        <fieldset >
-            <legend>Make your choice below:</legend>
-
-            <input type="radio" name="rock" id="rock">
-            <label for="rock">Rock</label><br/>
-            
-            <input type="radio" name="paper" id="paper">
-            <label for="paper">Paper</label><br/>
-
-            <input type="radio" name="scissors" id="scissors">
-            <label for="scissors">Scissors</label>
-        </fieldset>
+        <label for="choice-select">Make your choice from the dropdown box:</label>
+        <select name="choice" id="choice-select">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
 
         <input type="submit" value="Play">
     </form>
